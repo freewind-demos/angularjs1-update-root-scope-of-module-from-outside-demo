@@ -1,19 +1,12 @@
 <html>
 <head>
-    <style>
-        .bg-yellow {
-            background-color: yellow;
-        }
-    </style>
     <script src="./node_modules/angular/angular.js"></script>
     <script src="./hello-module.js"></script>
     <script src="./app.js"></script>
 </head>
 <body>
 <div ng-app="app">
-    <div hello-directive ng-controller="helloController">
-        <div>Angular Module</div>
-    </div>
+    <div hello-directive message="message"></div>
 </div>
 </body>
 </html>

@@ -1,13 +1,9 @@
-AngularJS1 Module Demo
-======================
+AngularJS1 Update Root Scope of Module from Outside Demo
+========================================================
 
-`module`可以用来分组，把多个相关的factory/service/controller/directive等等放在一个命名空间下。
-
-一个module还可以依赖其它的module，被依赖的module中定义的东西将自动可用。
+在某些奇怪的情况下（比如与其它框架配合使用，从其它框架中修改angular组件的值），需要得到某个module的`rootScope`.
 
 ```
 npm install
-open index.html
+npm run demo
 ```
-
-![demo](./images/demo.jpg)

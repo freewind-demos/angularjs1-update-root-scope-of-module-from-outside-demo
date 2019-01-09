@@ -1,13 +1,14 @@
 const helloModule = angular.module('helloModule', [])
 
-helloModule.controller('helloController', function ($scope) {
-    $scope.moduleName = 'HelloModule'
-})
+helloModule.run(function ($rootScope) {
+    $rootScope.message = 'Hello from helloModule (will be update)';
+});
 
 helloModule.directive('helloDirective', function () {
     return {
-        link: function ($scope, $element, $attrs) {
-            $element.append('<div class="bg-yellow">(Hello from ' + $scope.moduleName + ')</div>')
-        }
+        scope: {
+            message: "="
+        },
+        template: '<div>{{message}}</div>'
     }
-})
+});
