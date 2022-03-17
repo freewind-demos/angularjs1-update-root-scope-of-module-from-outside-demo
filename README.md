@@ -5,5 +5,5 @@ AngularJS1 Update Root Scope of Module from Outside Demo
 
 ```
 npm install
-npm run demo
+npm start
 ```
